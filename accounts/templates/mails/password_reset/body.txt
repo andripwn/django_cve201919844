@@ -1,0 +1,1 @@
+{% autoescape off %}Password Reset URL: {{ protocol }}://{{ domain }}{% url 'accounts:password_reset_confirm' uidb64=uid token=token %}{% endautoescape %}
